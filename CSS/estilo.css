@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+#logo_menu{							/*Define as medidas do ícone*/
+	width: 50px;
+	height: 50px;
+}
+
+header{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	display: flex;					/* transforma os elementos do header num flexbox */
+	background-color: black;
+	position: fixed;				/* deixa o elemento fixado numa determinada posição */
+	justify-content: center;		/* determia o alinhamento dos elementos do flexbox 
+									ao centro */
+}
+
+.main{								/* classe para configurar os parágrafos da sessão principal */
+	margin-left: 20px;
+	text-align: justify-all;		/* usado para escrita arábica ou hebraica que possui regras
+									 próprias para espaçamento entre os caracteres que mudam o 
+									 sentido das palavras */
+	color: blue;
+}
+
+#principal ul{
+	display: inline-flex;			/* transforma a lista em um flexbox, onde seus elementos serão
+									alinhados horizontalmente */ 
+	list-style: none;
+}
+
+#principal li{
+	padding: 10px;
+}
+
+#principal a{
+	text-decoration: none;
+	
+}
+
+button{
+	background-color: blue;
+	color: white;
+	text-transform: uppercase;
+}
+
+button:hover{
+	background-color: white;
+	color: black;
+}
+
+#conteudo{							/* para uso da estratégia de tableless */
+	margin-top: 50px;
+	width: 1000px;
+	height: 500px;
+}
+
+main{								/* conteúdo ou sessão principal do site */
+	margin-left: 150px;
+	width: 850px;
+	background-color: #a9a9a9;
+	float: left;
+}
+
+#lateral{							/* Conteúdo secundário <aside> do site */ 
+	width: 150px;
+	height: 325px;
+	background-color: white;
+	float: left;
+	position: fixed;
+	display: flex;					/* mostrar os elementos como flexbox */
+
+	flex-direction: column;			/* é usada para definir a direção de fluxo dos itens dentro
+									 de um contêiner flexível. Ao definir essa propriedade como
+									 column, os itens são dispostos verticalmente, um abaixo do
+									 outro, em uma coluna. */
+
+	align-items: center;			/* alinhar os elementos aos centro dentro de conteiner
+									flex */
+	
+}
+
+#.logo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.item_logo{
+	margin-top: 10px;
+}
+
+.logo_rede{
+	width: 30px;
+	height: 30px;
+	
+}
+
+footer{
+	color: white;
+	background-color: black;
+	width: 100%;
+	height: 10%;
+	bottom: 0px;
+	position: fixed;
+}
+
+#fim{
+	text-align: center;
+}
+
+
+
